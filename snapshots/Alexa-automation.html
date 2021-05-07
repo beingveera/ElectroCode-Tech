@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IoT Based Sound Pollution Monitoring System</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    b,h2,h3,h4,strong{
+      color: rgb(151, 4, 248);
+    };
+  </style>
+  
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Alexa Control Home Automation</h2>
+            <div class="owl-carousel portfolio-details-carousel">
+              <img src="assets/img/portfolio/Amazon-Alexa.jpg" class="img-fluid" alt="">
+              </div>
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Hardware Project</li>
+              <li><strong>Author</strong>: Lokesh Sharma</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+            </ul>
+
+            <p> we will learn how to control home appliances using Amazon Echo Dot Speaker with voice command. 
+                It is not that we are super lazy to toggle loads with switches, but in the age of IoT where everything
+                 is becoming “Smart”, we should also build a Smart Home Automation System.</p>
+            
+
+            
+          </div>
+
+        </div>
+        <p>A device like this will be useful in places like hospitals and schools to track and monitor the sound levels and take 
+          action accordingly. Previously we have also built an Air pollution meter to monitor air quality using IoT.</p>
+      </div><br><br><hr>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="portfolio-title">Amazon Alexa dot speaker :-</h2>
+            <div class="owl-carousel portfolio-details-carousel">
+              <img src="assets/img/portfolio/alexa.png" class="img-fluid" alt="" style='height:200px;width:250px';>
+              </div>
+          </div>
+
+          <div class="col-lg-8 portfolio-info">
+
+            <p><b> Amazon Alexa dot speaker</b> is a smart speaker that can be operated by voice, is compact and can fit in your favorite places
+                You can use Echo Dot as a Bluetooth speaker by pairing your phone to it. Or you can connect it to other speakers/headphones through Bluetooth/3.5mm jack
+                With a new speaker and design.</p>
+                <p> Echo Dot is a voice-controlled smart speaker with Alexa, designed for any room. Just ask for music, news, information, control
+                 compatible smart home devices and more. You can either use the crisp and clear built-in speaker or connect Echo Dot to your own other speakers using Bluetooth or 3.5mm audio cable.
+            </p>
+              <p>Make your home smart with Alexa and use voice to control lights, ACs, TVs, geysers, water motors 
+                  and more. You can purchase smart lights, plugs and other accessories separately</p>
+
+            
+          </div>
+
+        </div><hr>
+
+        <div class="row">
+
+          <div class="col-lg-12">
+            <h2 class="portfolio-title">Componentes Required :-</h2>
+            <div class="owl-carousel portfolio-details-carousel">
+            <ol>
+              <li> Arduino Uno</li>
+              <li> Amazon Alexa dot speaker</li>
+              <li> ESP8266-01</li>
+              <li> Jumper Wires</li>
+              <li> Breadboard or Zero PCB</li>
+            </ol>
+              </div>
+          </div>
+        </div><hr>
+
+          <div class="row">
+            <div class="col-lg-6 portfolio-info">
+              <h2 class="portfolio-title">Installing Libraries for IoT Alexa Home automation :-</h2>
+              <p>As we will create multiple virtual connections environment on ESP so we need to install fauxmoESP along with Asynchronous TCP library.</p>
+            <ol>
+                <li><p>For ESP8266 download the Asynchronous TCP library <a href="https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip" rel="nofollow" target="_blank">&nbsp;from here</a> and for ESP32 download it from this link.</p></li>
+                <li><p>Then download fauxmoESP library <a href="https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip" rel="nofollow" target="_blank">from here</a>.</p></li>
+                <li><p>Now, unzip these files in libraries folder in your Arduino directory which can be found in Documents
+                     folder. Also, rename these folders as oseperez-fauxmoesp-50cbcf3087f to xoseperez_fauxmoesp and
+                      ESPAsyncTCP-master to ESPAsyncTCP.</p></li>
+                <li><p>There is an example code in fauxmoESP for controlling appliances we have to modify this example.
+                     Open Arduino IDE and go to Examples -> FauxmoESp -> fauxmoESP_Basic.</p></li>
+            </ol>
+            </div>
+            <div class="col-lg-6 ">
+            <div class="owl-carousel portfolio-details-carousel">
+              <img src="assets/img/portfolio/Downloading-and-Installing.png" class="img-fluid" alt="" style="padding-top:10%">
+              </div>
+              </div>
+
+      </div><hr>
+
+      <div class="row">
+        <div class="col-lg-6 portfolio-info">
+          <h2 class="portfolio-title">Circuit diagram :-</h2>
+          <p>First, to program the ESP8266 using Arduino board, make the following connections and choose
+               Board as Generic ESP8266 and select correct port number. Finally, Hit the upload button.
+               After programming the module, just remove Rx Tx wires from Arduino and upload the Arduino part code.</p>
+         
+
+        </div>
+        <div class="col-lg-6 ">
+        <div class="owl-carousel portfolio-details-carousel">
+          <img src="assets/img/portfolio/Circuit-Diagram-for-Arduino-based-Amazon-Alexa-Controlled-Home-Automation.png" class="img-fluid" alt="">
+         </div>
+          </div>
+        </div>
+
+  <ol class="portfolio-info">
+    <li>Then make the connection again but with slight changes.</li>
+    <li>Connect Rx of ESP8266 -> Tx of Arduino.</li>
+    <li>Connect Tx of ESP8266 -> Rx of Arduino.</li>
+    <li>Remove GPIO 0 of Esp8266 from the GND.</li>
+    </ol>
+    <p>All connections remains same except above changes.</p>
+    <p>Now, we are done with the coding and hardware part. Its time to test our Home automation system. Also, note 
+        that the Wi-Fi network should remain same for both the ESP8266 and Amazon echo dot i.e. they have to share 
+        same Wi-Fi.</p>
+    
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-7 portfolio-info">
+          <h2 class="portfolio-title">Testing the Arduino based Alexa Home Automation System :-</h2>
+          <p>Now, try saying Alexa, Discover Devices. Alexa will respond like Starting discovering… I found two devices, try saying “Alexa, turn on Bedroom light”.</p>
+          <p>Alternatively, you can discover these devices in your Alexa app. Tap on + sign and then discover devices. You should see two devices namely Bedroom light and TV.</p>
+          <p>Now we are ready to test our IoT Alexa Home Automation System. So just try saying Alexa, turn on Bedroom light and the Relay one should be turned on.</p>
+          <p>Now say Alexa, turn off Bedroom light and relay one should turned off. Try giving commands to turn on/off the TV.</p>
+        </div>
+        <div class="col-lg-5 ">
+        <div class="owl-carousel portfolio-details-carousel">
+          <img src="assets/img/portfolio/Testing1.png" class="img-fluid" alt="" style="padding-top:10%">
+          <img src="assets/img/portfolio/Testing2.png" class="img-fluid" alt="" style="padding-top:10%">
+          <img src="assets/img/portfolio/Testing3.png" class="img-fluid" alt="" style="padding-top:10%">
+          </div>
+          </div>
+
+  </div><hr>
+
+
+
+      </div>
+      
+      
+    </section><!-- End Portfolio Details -->
+
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>ElectroCode</h3>
+      <p>A platform which full-filled your requirements...</p>
+      <div class="social-links">
+      <a href="https://twitter.com/ElectroCode1" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/ElectroCode-100929185304443" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/the_electrocode/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC446-CuLXAQqrccXO8s5tXg" class="google-plus"><i class="bx bxl-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/electrocode-471423201/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/the-electrocode" class="linkedin"><i class="bx bxl-github"></i></a>
+        
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>ElectroCode</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+              Designed by <a href="team.html">Team ElectroCode</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
